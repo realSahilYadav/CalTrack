@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import { BlurView } from 'expo-blur';
 
 const TabLayout = () => {
-    const TabIcon = ({ icon, iconSelected, focused }: { icon: any, iconSelected: any, focused: boolean }) => {
+    const TabIcon = ({ icon: Icon, iconSelected: IconSelected, focused }: { icon: typeof tabs[number]['icon'], iconSelected: typeof tabs[number]['iconSelected'], focused: boolean }) => {
     return (
         <View className="items-center justify-center mt-10">
             <View 
@@ -15,11 +15,11 @@ const TabLayout = () => {
                     focused ? 'bg-[#00FF41]' : 'bg-transparent'
                 )}
             >
-                <Image
-                    source={focused ? iconSelected : icon}
-                    contentFit="contain"
-                    style={{ width: 24, height: 24 }}
-                />
+                {focused ? (
+                    <IconSelected width={24} height={24} />
+                ) : (
+                    <Icon width={24} height={24} />
+                )}
             </View>
         </View>
     );
@@ -43,16 +43,16 @@ const TabLayout = () => {
                 shadowOpacity: 1,
                 shadowRadius: 48,
                 elevation: 10,
-                borderWidth: 0,
             },
             tabBarItemStyle: {
-                height: '10%',
+                height: '100%',
                 justifyContent: 'center', 
                 alignItems: 'center',
             },
             tabBarBackground: () => (
                 <BlurView 
                     intensity={20} 
+                    experimentalBlurMethod="dimezisBlurView"
                     style={{
                         ...StyleSheet.absoluteFillObject,
                         borderTopLeftRadius: 32,

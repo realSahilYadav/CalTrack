@@ -22,7 +22,7 @@ export const caloriesProgress: PROGRESS_ITEM = {
 export const proteinProgress: PROGRESS_ITEM = {
     current: 65,
     goal: 150,
-    unit: 'gm',
+    unit: 'g',
 };
 
 export const scannedItems: SCANNED_ITEM[] = [

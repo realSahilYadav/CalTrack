@@ -1,15 +1,18 @@
 import { BlurView } from 'expo-blur';
 import { Image, Text, View } from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 
 const ScannedCard = ({ item }: { item: SCANNED_ITEM }) => {
+  const [imageUri, setImageUri] = useState(item.image);
+  const fallbackImage = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80'; // Healthy food fallback
   return (
     <View className="h-56 w-52 bg-stone-900 rounded-[32px] overflow-hidden">
         <View className="h-28 w-full relative">
             <Image 
               className="w-full h-full" 
-              source={{ uri: item.image }} 
+              source={{ uri: imageUri }} 
               resizeMode="cover"
+              onError={() => setImageUri(fallbackImage)}
             />
             <BlurView
                 intensity={40}

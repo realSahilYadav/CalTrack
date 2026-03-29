@@ -3,7 +3,8 @@ import { View, Text } from 'react-native';
 
 
 const ProgressCard = ({ data } : { data: PROGRESS_ITEM }) => {
-  const percentage = Math.round((data.current / data.goal) * 100);
+  const isValidGoal = data.goal > 0 && Number.isFinite(data.goal);
+  const percentage = isValidGoal ? Math.min(Math.round((data.current / data.goal) * 100), 100) : 0;
 
   const label = data.unit === 'kcal' ? 'Calories' : 'Protein';
 

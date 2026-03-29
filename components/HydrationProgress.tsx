@@ -56,7 +56,10 @@ export default function HydrationProgress() {
   }));
 
   const handleAdd = () => {
-    setCurrent(prev => prev + 0.1);
+    setCurrent(prev => {
+      const next = Math.min(prev + 0.1, goal);
+      return Number(next.toFixed(1));
+    });
   };
 
   return (
@@ -98,6 +101,9 @@ export default function HydrationProgress() {
           onPress={handleAdd} 
           activeOpacity={0.7}
           className="bg-[#00e5ff] h-[60px] w-[60px] rounded-[30px] items-center justify-center shadow-lg"
+          accessibilityRole="button"
+          accessibilityLabel="Increment hydration"
+          accessibilityHint="Adds 0.1L to your hydration total"
         >
           <Text className="text-stone-900 text-3xl font-light leading-none mb-1">+</Text>
         </TouchableOpacity>
