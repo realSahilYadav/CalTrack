@@ -25,4 +25,3 @@ In today's fast-paced world, consistently tracking nutrition and daily health me
    ```bash
    npx expo start
    ```
-# CalTrack

@@ -3,3 +3,79 @@
 @import "tailwindcss/utilities.css";
  
 @import "nativewind/theme";
+
+@theme {
+  /* Colors - The Luminescent Spectrum */
+  --color-surface: #131313;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container: #201f1f;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353534;
+
+  --color-background: var(--color-surface);
+
+  --color-primary-container: #00ff41;
+  --color-primary-fixed-dim: #00e639;
+  --color-on-primary: #003907;
+
+  --color-secondary-fixed: #00fbfb;
+  --color-tertiary-fixed-dim: #ffb59c;
+  
+  --color-on-surface-variant: #c4c4c4;
+
+  /* Typography */
+  --font-sans: 'Inter', sans-serif;
+
+  /* Component Properties */
+  --radius-md: 1.5rem;
+  --radius-lg: 2rem;
+
+  /* Depth */
+  --shadow-ambient: 0px 24px 48px rgba(0, 0, 0, 0.4);
+}
+
+@layer utilities {
+  /* Typography - Editorial Data-Scale */
+  .text-display-lg {
+    font-size: 3.5rem;
+    letter-spacing: -0.02em;
+  }
+  .text-headline-md {
+    font-size: 1.75rem;
+  }
+  .text-title-md {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  .text-title-sm {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  .text-label-md {
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .text-label-sm {
+    font-size: 0.6875rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* Specific Components */
+  .border-ghost {
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .glass-card {
+    background-color: rgba(53, 53, 52, 0.6); /* surface_container_highest at 60% */
+    backdrop-filter: blur(20px);
+  }
+
+  .bg-signature-gradient {
+    /* Linear gradient 45deg from primary_fixed_dim to primary_container */
+    background-image: linear-gradient(45deg, #00e639, #00ff41);
+  }
+}
