@@ -15,14 +15,6 @@ In today's fast-paced world, consistently tracking nutrition and daily health me
 - **Historical Analytics:** Visualize your long-term health trends with a dedicated Progress Page featuring a comprehensive calendar view.
 - **Customizable Settings:** Complete control over your experience, allowing you to manage biometrics, API connections, notification preferences, and toggle between modern Light and Dark themes.
 
-## Tech Stack
-
-* **Frontend Framework:** `[Place your UI Framework here, e.g., React Native / Expo]`
-* **Styling/UI:** `[Place your Styling Solution here, e.g., NativeWind / TailwindCSS]`
-* **State Management:** `[Place your State Manager here, e.g., Zustand / React Context]`
-* **Backend/Auth:** `[Place your Backend Service here, e.g., Supabase / Firebase]`
-* **AI integration:** `[Place your AI Vision Model here, e.g., OpenAI gpt-4-vision / Gemini]`
-
 ## Getting Started
 
 1. Install dependencies:
@@ -33,3 +25,4 @@ In today's fast-paced world, consistently tracking nutrition and daily health me
    ```bash
    npx expo start
    ```
+# CalTrack
