@@ -1,52 +1,35 @@
-# Welcome to your Expo app 👋
+# CalTrack
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**CalTrack** is a data-driven fitness and nutrition app that leverages AI to automate calorie tracking and health goal management. Think of it as your intelligent personal health assistant, simplifying the journey to better health by removing the friction typical of traditional tracking apps.
 
-## Get started
+## About the Project
 
-1. Install dependencies
+In today's fast-paced world, consistently tracking nutrition and daily health metrics can feel tedious. CalTrack solves this by bringing AI directly into the health tracking experience. By utilizing multimodal AI vision and nutrition parsing, you can interact seamlessly with the app—whether by taking a photo of your meal or logging activities—and let CalTrack do the heavy data lifting. Our goal is to synthesize your personalized biometric data across multiple health ecosystems into one unified, intelligent, and developer-friendly dashboard.
 
+## Features
+
+- **AI-Powered Onboarding:** Get personalized daily targets for steps, calories, and water intake calculated instantly based on your age, weight, and height.
+- **Health Ecosystem Integration:** Automatically sync your steps and activity by connecting directly with Apple Health, Samsung Health, and Google Fit.
+- **Dynamic Home Dashboard:** Stay on top of your goals with a real-time tracking interface for your steps, calories burned, and water intake, plus a quick-access "Recently Scanned" food log.
+- **AI Vision & Nutrition Scanner:** Seamless multi-modal food logging! Snap a photo, scan a barcode, or search manually. Our AI categorizes your food by health impact (e.g., Protein-rich, High Vitamin) and automatically updates your daily macros.
+- **Historical Analytics:** Visualize your long-term health trends with a dedicated Progress Page featuring a comprehensive calendar view.
+- **Customizable Settings:** Complete control over your experience, allowing you to manage biometrics, API connections, notification preferences, and toggle between modern Light and Dark themes.
+
+## Tech Stack
+
+* **Frontend Framework:** `[Place your UI Framework here, e.g., React Native / Expo]`
+* **Styling/UI:** `[Place your Styling Solution here, e.g., NativeWind / TailwindCSS]`
+* **State Management:** `[Place your State Manager here, e.g., Zustand / React Context]`
+* **Backend/Auth:** `[Place your Backend Service here, e.g., Supabase / Firebase]`
+* **AI integration:** `[Place your AI Vision Model here, e.g., OpenAI gpt-4-vision / Gemini]`
+
+## Getting Started
+
+1. Install dependencies:
    ```bash
    npm install
    ```
-
-2. Start the app
-
+2. Start the development server:
    ```bash
    npx expo start
    ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-
-# CalTrack
