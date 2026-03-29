@@ -1,13 +1,19 @@
-import home from "@/assets/icons/home.png";
-import progress from "@/assets/icons/progress.png";
-import analytics from "@/assets/icons/analytics.png";
-import scanner from "@/assets/icons/scanner.png";
-import settings from "@/assets/icons/settings.png";
+import home from "@/assets/icons/home.svg";
+import homeSelected from "@/assets/icons/home-selected.svg";
+import progress from "@/assets/icons/progress.svg";
+import progressSelected from "@/assets/icons/progress-selected.svg";
+import scanner from "@/assets/icons/scanner.svg";
+import scannerSelected from "@/assets/icons/scanner-selected.svg";
+import settings from "@/assets/icons/settings.svg";
+import settingsSelected from "@/assets/icons/settings-selected.svg";
 
 export default {
   home,
+  homeSelected,
   progress,
-  analytics,
+  progressSelected,
   scanner,
+  scannerSelected,
   settings,
+  settingsSelected,
 };

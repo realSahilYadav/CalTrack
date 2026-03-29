@@ -32,7 +32,7 @@
   --radius-lg: 2rem;
 
   /* Depth */
-  --shadow-ambient: 0px 24px 48px rgba(0, 0, 0, 0.4);
+
 }
 
 @layer utilities {
@@ -71,11 +71,7 @@
 
   .glass-card {
     background-color: rgba(53, 53, 52, 0.6); /* surface_container_highest at 60% */
-    backdrop-filter: blur(20px);
   }
 
-  .bg-signature-gradient {
-    /* Linear gradient 45deg from primary_fixed_dim to primary_container */
-    background-image: linear-gradient(45deg, #00e639, #00ff41);
-  }
+
 }
