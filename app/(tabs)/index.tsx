@@ -1,5 +1,6 @@
 import '@/global.css';
 import { ScrollView, Text, View } from 'react-native';
+import { Link } from 'expo-router';
 import { SafeAreaView } from '@/components/SafeAreaView';
 import ProgressCard from '@/components/ProgressCard';
 import HydrationProgress from '@/components/HydrationProgress';
@@ -11,7 +12,7 @@ export default function App() {
     <SafeAreaView className="flex-1 bg-background p-5">
       <ScrollView showsVerticalScrollIndicator={false} className="flex-1">
         <View className="header mb-8">
-          <Text className="text-display-lg text-primary-container">
+          <Text className="text-primary-container text-display-lg font-bold mt-4 mb-2">
             Home
           </Text>
         </View>
@@ -32,7 +33,9 @@ export default function App() {
         <View className="mt-8 w-full">
           <View className="flex-row justify-between items-center mb-4">
             <Text className="text-white text-lg font-bold">Recently Consumed</Text>
-            <Text className="text-green-500 text-xs font-bold uppercase tracking-wider">See All</Text>
+            <Link href="/recently-consumed" asChild>
+              <Text className="text-[#00FF41] text-xs font-bold uppercase tracking-wider">See All</Text>
+            </Link>
           </View>
           
           <ScrollView 
@@ -41,8 +44,8 @@ export default function App() {
             className="w-auto"
             contentContainerStyle={{ paddingBottom: 20 }}
           >
-            {scannedItems.map((item, index) => (
-              <View key={item.id} className={index !== scannedItems.length - 1 ? "mr-4" : ""}>
+            {scannedItems.slice(0, 4).map((item, index) => (
+              <View key={item.id} className={index !== 3 ? "mr-4" : ""}>
                 <ScannedCard item={item} />
               </View>
             ))}
