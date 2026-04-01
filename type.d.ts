@@ -14,12 +14,36 @@ declare global {
         carbs: number;
         fat: number;
         image: string;
+        time: string;
     }
 
     interface PROGRESS_ITEM {
         current: number;
         goal: number;
         unit: string;
+    }
+
+    interface WEEKLY_DAY {
+        day: string;
+        date: number;
+        isToday?: boolean;
+    }
+
+    interface NUTRITIONAL_TREND {
+        label: string;
+        calories: number;
+        protein: number;
+    }
+
+    interface HISTORY_LOG_ITEM {
+        id: number;
+        day: string;
+        date: number;
+        calories: number;
+        protein: number;
+        weightChange: number;
+        weightChangeUnit: string;
+        isToday?: boolean;
     }
 }
 

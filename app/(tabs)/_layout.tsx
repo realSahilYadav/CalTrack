@@ -5,13 +5,12 @@ import { tabs } from "@/constants/data";
 import clsx from 'clsx';
 import { BlurView } from 'expo-blur';
 
-const TabLayout = () => {
-    const TabIcon = ({ icon: Icon, iconSelected: IconSelected, focused }: { icon: typeof tabs[number]['icon'], iconSelected: typeof tabs[number]['iconSelected'], focused: boolean }) => {
+const TabIcon = ({ icon: Icon, iconSelected: IconSelected, focused }: { icon: typeof tabs[number]['icon'], iconSelected: typeof tabs[number]['iconSelected'], focused: boolean }) => {
     return (
         <View className="items-center justify-center mt-10">
             <View 
                 className={clsx(
-                    'w-[48px] h-[48px] items-center justify-center rounded-full',
+                    'w-[48px] h-[48px] items-center justify-center rounded-full overflow-hidden',
                     focused ? 'bg-[#00FF41]' : 'bg-transparent'
                 )}
             >
@@ -24,6 +23,8 @@ const TabLayout = () => {
         </View>
     );
 };
+
+const TabLayout = () => {
 
     return (
         <Tabs screenOptions={{

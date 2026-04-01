@@ -28,92 +28,122 @@ export const proteinProgress: PROGRESS_ITEM = {
 export const scannedItems: SCANNED_ITEM[] = [
     {
         id: 1,
-        name: 'Apple',
-        calories: 95,
-        protein: 0.5,
-        carbs: 25,
-        fat: 0.3,
-        image: 'https://images.unsplash.com/photo-1560806857-de127cf05c58?auto=format&fit=crop&w=400&q=80'
+        name: 'Salmon Avocado Bowl',
+        calories: 420,
+        protein: 32,
+        carbs: 12,
+        fat: 24,
+        time: '12:30 PM',
+        image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80'
     },
     {
         id: 2,
-        name: 'Banana',
-        calories: 105,
-        protein: 1.3,
-        carbs: 27,
-        fat: 0.4,
+        name: 'Blueberry Greek Yogurt',
+        calories: 210,
+        protein: 18,
+        carbs: 24,
+        fat: 6,
+        time: '10:15 AM',
         image: 'https://images.unsplash.com/photo-1481349518771-20055b2a7b24?auto=format&fit=crop&w=400&q=80'
     },
     {
         id: 3,
-        name: 'Orange',
-        calories: 62,
-        protein: 1.2,
-        carbs: 15,
-        fat: 0.2,
-        image: 'https://images.unsplash.com/photo-1585059895318-50854402660d?auto=format&fit=crop&w=400&q=80'
+        name: 'Grilled Chicken Salad',
+        calories: 345,
+        protein: 42,
+        carbs: 8,
+        fat: 12,
+        time: '8:15 AM',
+        image: 'https://images.unsplash.com/photo-1546793665-c74683c3f38d?auto=format&fit=crop&w=400&q=80'
     },
     {
         id: 4,
-        name: 'Grapes',
-        calories: 69,
-        protein: 0.7,
-        carbs: 18,
-        fat: 0.2,
-        image: 'https://images.unsplash.com/photo-1537044453278-685ea3c75ec6?auto=format&fit=crop&w=400&q=80'
+        name: 'Quinoa Buddha Bowl',
+        calories: 510,
+        protein: 12,
+        carbs: 48,
+        fat: 14,
+        time: 'Yesterday',
+        image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=400&q=80'
     },
     {
         id: 5,
-        name: 'Strawberry',
-        calories: 33,
-        protein: 0.7,
-        carbs: 8,
-        fat: 0.3,
-        image: 'https://images.unsplash.com/photo-1464961130148-988125626cc2?auto=format&fit=crop&w=400&q=80'
+        name: 'Protein Smoothie',
+        calories: 280,
+        protein: 30,
+        carbs: 20,
+        fat: 8,
+        time: 'Yesterday',
+        image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=400&q=80'
     },
     {
         id: 6,
-        name: 'Blueberry',
-        calories: 57,
-        protein: 0.7,
-        carbs: 14,
-        fat: 0.3,
-        image: 'https://images.unsplash.com/photo-1447078806655-40579c2520d6?auto=format&fit=crop&w=400&q=80'
+        name: 'Oatmeal with Nuts',
+        calories: 320,
+        protein: 10,
+        carbs: 45,
+        fat: 12,
+        time: '2 days ago',
+        image: 'https://images.unsplash.com/photo-1517673400267-0251440c45dc?auto=format&fit=crop&w=400&q=80'
+    },
+];
+
+export const weeklyDays: WEEKLY_DAY[] = [
+    { day: 'MON', date: 16 },
+    { day: 'TUE', date: 17 },
+    { day: 'WED', date: 18 },
+    { day: 'THU', date: 19, isToday: true },
+    { day: 'FRI', date: 20 },
+    { day: 'SAT', date: 21 },
+    { day: 'SUN', date: 22 },
+];
+
+export const nutritionalTrends: NUTRITIONAL_TREND[] = [
+    { label: '13 Oct', calories: 1200, protein: 45 },
+    { label: '14 Oct', calories: 1500, protein: 70 },
+    { label: '15 Oct', calories: 1300, protein: 55 },
+    { label: '16 Oct', calories: 1800, protein: 90 },
+    { label: '17 Oct', calories: 1600, protein: 75 },
+    { label: '18 Oct', calories: 1400, protein: 60 },
+    { label: 'Today', calories: 1700, protein: 85 },
+];
+
+export const historyLog: HISTORY_LOG_ITEM[] = [
+    {
+        id: 1,
+        day: 'Today',
+        date: 19,
+        calories: 1840,
+        protein: 142,
+        weightChange: -0.2,
+        weightChangeUnit: 'kg',
+        isToday: true,
     },
     {
-        id: 7,
-        name: 'Raspberry',
-        calories: 52,
-        protein: 1.2,
-        carbs: 12,
-        fat: 0.7,
-        image: 'https://images.unsplash.com/photo-1577003811926-63e1d8c2b071?auto=format&fit=crop&w=400&q=80'
+        id: 2,
+        day: 'Wednesday',
+        date: 18,
+        calories: 2100,
+        protein: 120,
+        weightChange: 0.1,
+        weightChangeUnit: 'kg',
     },
     {
-        id: 8,
-        name: 'Blackberry',
-        calories: 43,
-        protein: 1.4,
-        carbs: 9,
-        fat: 0.5,
-        image: 'https://images.unsplash.com/photo-1570163351336-96d5570081bb?auto=format&fit=crop&w=400&q=80'
+        id: 3,
+        day: 'Tuesday',
+        date: 17,
+        calories: 1950,
+        protein: 135,
+        weightChange: -0.4,
+        weightChangeUnit: 'kg',
     },
     {
-        id: 9,
-        name: 'Pineapple',
-        calories: 50,
-        protein: 0.5,
-        carbs: 13,
-        fat: 0.1,
-        image: 'https://images.unsplash.com/photo-1550258114-ec0a89d3d3d8?auto=format&fit=crop&w=400&q=80'
-    },
-    {
-        id: 10,
-        name: 'Mango',
-        calories: 60,
-        protein: 0.8,
-        carbs: 15,
-        fat: 0.4,
-        image: 'https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=400&q=80'
+        id: 4,
+        day: 'Monday',
+        date: 16,
+        calories: 1650,
+        protein: 112,
+        weightChange: -0.1,
+        weightChangeUnit: 'kg',
     },
 ];
