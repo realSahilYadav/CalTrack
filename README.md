@@ -1,10 +1,10 @@
-# CalTrack
+# NutriScanAI
 
-**CalTrack** is a data-driven fitness and nutrition app that leverages AI to automate calorie tracking and health goal management. Think of it as your intelligent personal health assistant, simplifying the journey to better health by removing the friction typical of traditional tracking apps.
+**NutriScanAI** is a data-driven fitness and nutrition app that leverages AI to automate calorie tracking and health goal management. Think of it as your intelligent personal health assistant, simplifying the journey to better health by removing the friction typical of traditional tracking apps.
 
 ## About the Project
 
-In today's fast-paced world, consistently tracking nutrition and daily health metrics can feel tedious. CalTrack solves this by bringing AI directly into the health tracking experience. By utilizing multimodal AI vision and nutrition parsing, you can interact seamlessly with the app—whether by taking a photo of your meal or logging activities—and let CalTrack do the heavy data lifting. Our goal is to synthesize your personalized biometric data across multiple health ecosystems into one unified, intelligent, and developer-friendly dashboard.
+In today's fast-paced world, consistently tracking nutrition and daily health metrics can feel tedious. NutriScan solves this by bringing AI directly into the health tracking experience. By utilizing multimodal AI vision and nutrition parsing, you can interact seamlessly with the app—whether by taking a photo of your meal or logging activities—and let NutriScanAI do the heavy data lifting. Our goal is to synthesize your personalized biometric data across multiple health ecosystems into one unified, intelligent, and developer-friendly dashboard.
 
 ## Features
 
